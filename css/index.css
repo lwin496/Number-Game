@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #EFD0CA;
+}
+
+header {
+  background-color: #5C7457;
+}
+
+header h1 {
+  color: white;
+  text-shadow: 2px 2px 2px #EFD0CA;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+header h1 a:after {
+  content: '_';
+  background-color: white;
+  font-size: 2rem;
+  display: block;
+}
+
+header .container {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: #214E34;
+}
+
+header .nav {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+header .nav a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  text-shadow: 2px 2px 2px #EFD0CA;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 82% 18%;
+}
+
+.equation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3rem;
+  border: 1rem;
+  text-align: center;
+  padding-top: 1rem;
+  float: left;
+}
+
+.equation #num1 {
+  color: #5C7456;
+}
+
+.equation #num2 {
+  color: #5C7456;
+}
+
+.equation h1 {
+  display: inline;
+  padding: 1rem;
+}
+
+.answerbox {
+  padding-top: 5rem;
+  padding-right: 5rem;
+  font-size: 3rem;
+}
+
+.answerbox h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+}
+
+.answerbox h1:hover {
+  opacity: .5;
+}
+
+.answerbox h1:nth-child(1) {
+  background-color: #214E34;
+}
+
+.answerbox h1:nth-child(2) {
+  background-color: #5C7456;
+}
+
+.answerbox h1:nth-child(3) {
+  background-color: #979B8D;
+}
+
+.scorebox {
+  margin-top: 5rem;
+}
+
+.scorebox h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Heebo', sans-serif;
+}
+/*# sourceMappingURL=index.css.map */

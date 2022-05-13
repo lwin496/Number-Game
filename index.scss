@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+//font-family: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+// font-family: 'Heebo', sans-serif;
+*{ 
+      margin: 0;
+      padding: 0;
+}
+
+$maincolor: #214E34;
+$submain: #5C7456;
+$sub1: #979B8D;
+$sub2: #C1BCAC;
+$sub3: #EFD0CA;
+body{ 
+      background-color: $sub3;
+}
+header{ 
+      background-color: #5C7457;
+      h1{   
+            color: white;
+            text-shadow: 2px 2px 2px $sub3;
+            padding-top: 1rem;
+            padding-bottom: 3rem;
+            a{ 
+                  &:after{ 
+                        content: '_';
+                        background-color: white;
+                        font-size: 2rem;
+                        display: block;
+                  }
+            }
+      }
+      .container{ 
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+            font-size: 3rem;
+            color: $maincolor;
+      }
+      .nav{
+            padding-bottom: 2rem;
+            display: flex;
+            justify-content: space-around;
+            a{ 
+                  font-family: Verdana, Geneva, Tahoma, sans-serif;
+                  color: white;
+                  text-shadow: 2px 2px 2px $sub3;
+                  text-decoration: none;
+                  font-size: 3rem;
+                  
+            }
+      }
+}
+.wrapper{ 
+      display: grid;
+      grid-template-columns: 82% 18%;
+}
+.equation{ 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 3rem;
+      // background-color: white;
+      border: 1rem;
+      text-align: center;
+      padding-top: 1rem;
+      // width: 50vw;
+      float: left;
+      #num1{ 
+            color: $submain;
+      }
+      #num2{ 
+            color: $submain;
+      }
+      h1{ 
+            display: inline;
+            padding: 1rem;
+      }
+}
+.answerbox{ 
+      padding-top: 5rem;
+      padding-right: 5rem;
+      font-size: 3rem;
+      h1{   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+            cursor: pointer;
+            &:hover{ 
+                  opacity: .5;
+            }
+      }
+      h1:nth-child(1){ 
+            background-color: $maincolor;
+      }
+      h1:nth-child(2){ 
+            background-color: $submain;
+      }
+      h1:nth-child(3){ 
+            background-color: $sub1;
+      }
+}
+
+.scorebox{ 
+      margin-top: 5rem;
+      h1{ 
+            text-align: center;
+            color: white;
+            font-family: 'Heebo', sans-serif;
+      }
+}
